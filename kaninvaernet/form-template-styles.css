@@ -1,0 +1,158 @@
+/**
+Theme Name: kaninvaernet
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kaninvaernet
+Template: astra
+*/
+
+/*------ doner -----*/
+
+.give-embed-form-wrapper iframe {
+	background-color: #F7F7F7;
+	border-radius: 100px;
+}
+
+.give-form-section:first-of-type {
+	display: block;
+}
+.give-donation-amount{
+	border-bottom: 2px solid #346733 !important;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: inherit;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #F7F7F7;
+	display: flex;
+	grid-template-columns: inherit;
+	justify-content: center;
+}
+.give-donation-amount .give-text-input, .give-donation-amount .give-currency-symbol{
+	font-size: 42px !important;
+	padding: 10px;
+	color: #346733;
+	font-family: 'Fira Sans';
+	background-color: #F7F7F7;
+	display: block;
+	width: 100%;
+}
+.give-amount-heading {
+	font-size: 28px;
+	font-family: 'Fira Sans';
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+}
+.give-amount-description {
+	text-align: center;
+}
+
+.give-personal-info-section fieldset:not(.ffm-field-container>fieldset) legend:first-of-type,
+.give-payment-details-section legend:first-of-type{
+	font-size: 16px;
+	font-family: 'Fira Sans';
+	color: #346733;
+}
+
+.give-input-field-wrapper, .give-select, .give-square-cc-fields, .give-stripe-single-cc-field-wrap, :where(.form-row,.give-gateway-details) :where(input[type=text],input[type=tel],input[type=email],input[type=url],input[type=password],textarea,select,.give-select,.give-stripe-cc-field):not(#give-amount) {
+font-size: 14px !important;
+	padding: 10px;
+	font-weight: 200;
+	box-shadow:none;
+	background-color: #F7F7F7;
+}
+
+.give-form-section {
+	padding-top: 0;
+}
+
+.give-donation-amount-section {
+	row-gap: inherit;
+}
+
+.give-btn {
+	border-radius: 40px;
+	font-size: 16px;
+	padding: 10px;
+	max-width: 300px;
+	margin: 0 auto;
+	font-weight: 300;
+}
+
+#give-gateway-radio-list>li>.give-gateway+.give-gateway-option {
+	font-size: 14px;
+}
+
+fieldset.no-fields {
+	display:none;
+}
+#give_error_test_mode {
+	display: none;
+}
+#give-donation-level-button-wrap .give-tooltip:after {
+	display: none;
+}
+
+.give-donation-levels-wrap {
+	grid-template-columns:inherit;
+	display: flex;
+	justify-content: space-around;
+}
+.give-btn.give-donation-level-btn, .give-btn.give-donation-level-btn.give-btn-level-custom {
+	height: auto;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #346733;
+	border: 1px solid #346733;
+	background-color: #F7F7F7;
+		font-family: 'Fira Sans';
+	word-spacing: inherit;
+	
+}
+
+.give-btn.give-donation-level-btn:hover, .give-btn.give-donation-level-btn.give-default-level{
+	background-color: #346733;
+	color: white;
+	box-shadow: none;
+}
+
+.hint--top:hover:before {
+	display: none;
+}
+
+.give-input-field-wrapper.focus, .give-input-field-wrapper:focus, .give-select.focus, .give-select:focus, .give-square-cc-fields.focus, .give-square-cc-fields:focus, .give-stripe-single-cc-field-wrap.focus, .give-stripe-single-cc-field-wrap:focus, :where(.form-row,.give-gateway-details) :where(input[type=text],input[type=tel],input[type=email],input[type=url],input[type=password],textarea,select,.give-select,.give-stripe-cc-field):not(#give-amount).focus, :where(.form-row,.give-gateway-details) :where(input[type=text],input[type=tel],input[type=email],input[type=url],input[type=password],textarea,select,.give-select,.give-stripe-cc-field):not(#give-amount):focus {
+	outline: inherit;
+}
+
+#give-gateway-radio-list {
+	margin-top: 0;
+	background-color: #F7F7F7;
+}
+#give-gateway-radio-list>li.give-gateway-option-selected {
+	background-color: #F7F7F7;
+}
+
+#give-gateway-radio-list>li.give-gateway-option-selected .give-gateway-details, #give-gateway-radio-list>li.give-gateway-option-selected>.give-gateway:not(:focus,:hover) {
+	font-size: 14px;
+}
+
+.give-personal-info-section fieldset:not(.ffm-field-container>fieldset) {
+	row-gap: 10px;
+}
+.give-label {
+	font-size: 14px;
+}
+/* mobil */
+@media screen and (max-width: 720px) {
+	.give-donation-levels-wrap {
+		display:grid;
+		grid-template-columns: repeat(auto-fill,minmax(clamp(6.625rem,0.4711538462rem + 19.2307692308vw,10.375rem),1fr));
+	}
+}

@@ -1,0 +1,1170 @@
+/**
+Theme Name: kaninvaernet
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kaninvaernet
+Template: astra
+*/
+
+/*---- general -----*/
+
+html body {
+	--wp--custom--ast-content-width-size: 1100px;
+}
+
+#content {
+	padding-top: 60px;
+}
+
+.ast-container, .ast-hfb-header .site-footer {
+	max-width:1300px;
+	margin: 0 auto;
+}
+
+h1 { max-width:800px;
+margin: 0 auto;
+	position:relative;
+}
+
+h1, h2, h3 {
+	letter-spacing: 0.5px;
+}
+
+h1:before {content:"";
+max-width:250px;
+	width: 100%;
+height:2px;
+background-color:white;
+position:absolute;
+bottom: -30px;
+	left: 34%;
+opacity:0.5;}
+
+p {line-height:1.6;
+--wp--style--block-gap: 1rem;}
+
+li {
+	list-style-type: none;
+}
+
+.border-button.wp-block-button a{
+	border: 2px solid white;
+	background: transparent;
+}
+
+.border-button.wp-block-button .wp-block-button__link:hover, .border-button.wp-block-button .wp-block-button__link:focus {
+color: #346733 !important;	
+	border-color: white;
+}
+
+.right {
+	justify-content: end;
+	max-width: inherit;
+}
+
+/* generel slut */
+
+/*---- header -----*/
+
+.ast-primary-header-bar {
+	border-bottom: 0;
+}
+
+.ast-site-identity {
+	padding: 10px 0;
+}
+
+.astra-logo-svg:not(.sticky-custom-logo .astra-logo-svg,.transparent-custom-logo .astra-logo-svg,.advanced-header-logo .astra-logo-svg) {
+	height: auto;
+}
+header .custom-logo-link img {
+	max-width: auto;
+}
+
+/* tilføj ikon til log ind/min konto */
+.ast-header-account-text:after {
+	content:' ';
+	margin-left: 5px;
+	background-image: url("https://jsk-grafik.dk/kea/kaninvaernet.dk/wp-content/uploads/2022/05/user-solid.svg");
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-size: 15px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	
+}
+
+.site-header-section .ast-builder-menu, .main-navigation ul {
+	height: 100%;
+}
+
+/* transparent streg under menupunkter */
+.main-navigation a {
+	border-bottom: 4px solid transparent;
+	padding-top: 5px !important;
+}
+.main-navigation .current-menu-item a{
+	border-bottom: 4px solid green ;
+}
+.main-navigation .sub-menu .current-menu-item a {
+	border-bottom: 0 !important;
+}
+.main-navigation .sub-menu a,
+.main-header-menu .sub-menu .menu-item.focus>.sub-menu, .main-header-menu .sub-menu .menu-item:hover>.sub-menu {
+	height: auto;
+}
+.main-header-menu .sub-menu .menu-link {
+	padding-top: 1.1rem !important;
+}
+
+
+ul {
+	margin: 0;
+}
+
+/* header slut ----*/
+
+/*----- Index  -----*/
+.landing {
+	background: url('https://jsk-grafik.dk/kea/video/kaninvaernet_landingpage_1920x650_2.mp4')
+}
+
+/*knapper*/
+header .ast-custom-button {
+	border: 2px solid #346733;
+}
+
+.wp-block-button .wp-block-button__link {
+	border: 2px solid transparent ;
+}
+
+.wp-block-button.etu-knap .wp-block-button__link:hover {
+	border: 2px solid #6989a0;
+	color: #6989a0;
+	background-color: white !important;
+}
+
+.wp-block-button.hvid-knap .wp-block-button__link:hover {
+border: 2px solid white;
+	color: white !important;
+	background-color: #346733 !important;	
+}
+
+.wp-block-button .wp-block-button__link:hover, .wp-block-button .wp-block-button__link:focus, .ast-custom-button:hover {
+	color: #346733;
+	background-color: white;
+	border: 2px solid #346733;
+}
+
+/* kolonne mellemrum */
+.wp-block-columns {
+	gap: 40px;
+}
+
+.ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu, .ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper {
+    margin-top: 0px;
+    top: 72px;
+	border-top: 2px solid #346733;
+height: auto;}
+
+/* antal xxx */
+.wp-block-column.is-vertically-aligned-center.count {
+	border-left: 1px solid #346733;
+	    padding-left: 10px;
+}
+.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column:not(:first-child) {
+margin-left: 0 !important;
+}
+
+.doner-akut {
+	border: 2px solid #346733;
+	border-radius: 75px;
+	margin: 0 auto;
+}
+
+.doner-akut p {
+	margin-bottom: 5px;
+}
+
+.hjaelp-boks .wp-block-column {
+	position: relative;
+top: 20px;
+	z-index:1;
+	overflow: hidden;
+}
+.hjaelp-boks .wp-block-column img {
+	transition: 200ms ease-in-out;
+}
+.hjaelp-boks .wp-block-column:hover {
+	cursor: pointer;
+}
+.hjaelp-boks .wp-block-column:hover img {
+	transform: scale(1.1);
+}
+
+.hjaelp-boks p {
+	margin-bottom: 0;
+	
+}
+
+.laering p {
+	font-family: fira sans;
+	margin: 0;
+}
+.laering .wp-block-cover{
+	overflow: hidden;
+}
+.laering .wp-block-cover img {
+	transition: 200ms ease-in-out;
+}
+.laering .wp-block-cover:hover img {
+	transform: scale(1.1);
+}
+.link-cover {
+	position: absolute;
+	top: 0;
+left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.link-cover a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/*------- kontakt formular sider(akutteam og kontakt)----- */
+/* grøn container */
+.formular {
+	border-radius: 90px;
+	z-index: 1;
+	align-self: flex-start;
+}
+.formular label {
+	color: white;
+}
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+	color: white;
+}
+/* formular send knap */
+button.send, div.wpforms-container-full .wpforms-form button[type=submit] {
+	background-color: white;
+	color: #346733;
+	border-radius: 20px;
+	font-size: 14px;
+}
+
+/* formular font */
+div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea, div.wpforms-container-full .wpforms-form .wpforms-field-label, div.wpforms-container-full .wpforms-form .choices .choices__list--single, div.wpforms-container .wpforms-form .choices__inner, div.wpforms-container .wpforms-form .choices__inner {
+	font-size: 15px;
+	border: 0;
+	font-weight:normal;
+	border-radius: 10px;
+}
+/* formular slut */
+
+
+/* VIDEN menu */
+.viden-menu {
+	padding: 40px;
+	box-shadow: 1px 1px 20px #8888883b;
+}
+.viden-menu ul {
+		gap: 0;
+	width: 100%;
+	}
+
+.viden-menu nav {
+	margin-top: 0;
+}	
+	.viden-menu .wp-block-navigation .wp-block-navigation-item {
+		background-color: inherit;
+    border-bottom: 1px solid #dadada;
+    width: 100%;
+    height: 50px;
+	}
+.viden-menu .wp-block-navigation .wp-block-navigation-item:hover {
+	color: #346733;
+}
+/* viden menu slut */
+
+
+/* banner med CTA som overlapper baggrund */
+.banner {
+	position: relative;
+	top: 75px;
+}
+
+.bund-stot {
+	--wp--style--block-gap: 0;
+}
+.bund-stot .wp-block-column {
+	box-shadow: 2px 3px 20px #00000024;
+	position: relative;
+	padding-bottom: 200px;
+}
+.bund-stot h4 {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+/*---- footer ----*/
+.widget {
+	margin-bottom: 0;
+}
+.widget p {
+	margin-bottom: 7px;
+}
+.widget p a:hover {
+	opacity: 0.5;
+}
+
+.widget a {
+	color:#676767;
+}
+.footer-social-inner-wrap a{
+	transition: 100ms ease-in-out;
+}
+.footer-social-inner-wrap a:hover {
+	transform: scale(1.1);
+}
+.widget h4{
+	position: relative;
+	margin-bottom: 20px !important;
+}
+
+/* lille streg under overskrifter */
+.widget h4:before {
+	content: "";
+	max-width: 30px;
+	width: 100%;
+	height: 5px;
+	background-color: #346733;
+	position: absolute;
+	bottom: -10px;
+	left:0;
+}
+/*   footer slut */
+
+/* -------- KANIN ADOPTION -------*/
+/* valgte filter */
+#filtrering button.valgt {
+color:#525252;	
+}
+#filtrering button {
+	background: none;
+	color: #8B8B8B;
+	padding: 0;
+	margin-right: 15px;
+	text-decoration: underline;
+}
+
+.kanin-adoption #cover {
+	position: relative;
+    background-size: cover;
+    background-position: 50%;
+    min-height: 430px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+#cover h1 {
+	color: white !important;
+}
+
+#main.kanin-adoption {
+	background-color: #F7F7F7;
+}
+
+.kanin-adoption #main_container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 40px;
+}
+
+.remove {
+	opacity:0;
+}
+
+.show {
+	opacity: 1;
+}
+/* placering af "køn" ikon */
+#kon {
+	position: absolute;
+	z-index: 1;
+	top: 110px;
+	right: 20px;
+}
+
+.kanin-adoption article {
+	position: relative;
+	background-color: white;
+	max-width: 400px;
+	transition: 100ms ease-in-out;
+}
+.kanin-adoption h2 {
+	margin-bottom: 20px;
+}
+.kanin-adoption h2:first-line {
+	color: #346733; 
+}
+
+.kanin-adoption article:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+}
+
+.kanin-adoption article .kanin-info {
+	padding: 15px;
+}
+.kanin-info h3 {
+	font-size: 18px;
+	color: #346733;
+	margin-bottom: 10px;
+}
+
+.kanin-info p {
+	margin-bottom: 5px;
+	font-size: 15px;
+	font-family: 'Fira Sans';
+		line-height: 1.3;
+	color: #525252;
+}
+.kanin-info p.kort-beskrivelse {
+	color: #8B8B8B;
+	margin-top: 15px;
+	margin-bottom: 40px;
+	font-family: inherit;
+	font-size: 14px;
+}
+
+.kanin-info .lokation {
+	color: #346733;
+	position: absolute;
+	bottom: 15px;
+}
+
+.kanin-adoption article img {
+	max-height: 170px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.kanin-adoption #info_loop {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	grid-gap: 20px;
+	margin-top: 20px;
+}
+
+/* single kanin */
+div.single-kanin{
+	max-width: 900px !important;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 50px;
+	background-color: white;
+	position: relative;
+	bottom: 50px;
+}
+
+.single-kanin .profil {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	grid-gap: 40px;
+	align-items: center;
+	background-color: #335532;
+	color: white;
+	max-width: 100%;
+}
+
+.single-kanin .profil h1 {
+	color: white;
+}
+
+.single-kanin .profil ul {
+	margin: 0;
+	line-height: 1.5;
+	font-family: 'Fira Sans';
+	font-size: 16px;
+}
+.single-kanin .profil h1:before {
+	left: 0;
+	bottom: -5px;
+	max-width: 150px;
+}
+
+/* fjern titel fra kaninerne */
+.kanin-template-default.single-kanin.ast-single-post .entry-title, .kanin-template-default.single-kanin.single.ast-page-builder-template .entry-header, .nyhed-template-default.single-nyhed.ast-single-post .entry-title, .nyhed-template-default.single-nyhed.single.ast-page-builder-template .entry-header  {
+	display:none;
+}
+/* hvid kasse med beskrivelse */
+.single-kanin article {
+	background-color: #F7F7F7;
+	font-size: 15px;
+}
+.single-kanin .profil-img {
+	width: 100%;
+	max-height: 500px;
+	object-fit: cover;
+}
+
+
+/*---- profil/konto -----*/
+#pmpro_account #pmpro_account-profile {
+	line-height:1.6;
+}
+
+#pmpro_account #pmpro_account-profile h3 {
+	display: none;
+}
+
+#pmpro_account #pmpro_account-profile li {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#pmpro_account #pmpro_account-profile p {
+	font-size: 26px;
+	font-family: 'Fira sans';
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+#pmpro_account #pmpro_account-profile p:before {
+	content:' ';
+	margin-left: 5px;
+	background-image: url("https://jsk-grafik.dk/kea/kaninvaernet.dk/wp-content/uploads/2022/05/user-solid.svg");
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-size: 20px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 1rem;
+}
+#pmpro_account .pmpro_box {
+	border: none;
+}
+#pmpro_account .pmpro_box p {
+	margin: 0;
+}
+
+#pmpro_account #pmpro_account-membership tbody, #pmpro_account #pmpro_account-membership tr {
+	display: block;
+}
+
+#pmpro_account #pmpro_account-membership table, #pmpro_account #pmpro_account-membership thead, th, td {
+	border: none;
+}
+
+#pmpro_account #pmpro_account-membership th, .pmpro_account-membership-expiration {
+	display: none;
+}
+
+#pmpro_account #pmpro_account-membership h3 {
+	display: none;
+}
+
+#pmpro_account #pmpro_account-membership td {
+	font-size: 16px;
+	font-weight: 400;
+	min-width: auto;
+	vertical-align: text-bottom;
+}
+td.pmpro_account-membership-levelname {
+	font-size: 24px !important;
+	font-weight: 400;
+}
+#pmpro_account #pmpro_account-membership .pmpro_table td:nth-child(1){
+	min-width: inherit;
+	display: block;
+}
+.pmpro_actionlinks {
+	font-weight:300;
+	font-size: 14px;
+}
+
+.pmpro_member_profile_edit-fields input[type=text], .pmpro_change_password-fields input {
+	border-radius: 60px;
+	max-width: 50% !important;
+	width: 100%;
+	margin: 0 auto;
+}
+.pmpro_member_profile_edit-fields label, .pmpro_change_password-fields label {
+	font-weight: 500 !important;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+/* ----- Log ind ------*/
+#loginform {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#loginform label {
+	font-weight: 500 !important;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+#loginform .login-remember label {
+	padding: inherit;
+	display: inherit;
+}
+#loginform .login-remember input {
+	width: auto;
+}
+#loginform input {
+border-radius: 60px;
+	width: 100%;
+	margin: 0 auto;	
+}
+#loginform input#wp-submit {
+	width: auto;
+}
+
+/* vælg medlemsskab */
+/* fjern border fra tabel */
+#pmpro_levels_table {
+	border: none;
+}
+/* overskrifter i tabel */
+#pmpro_levels_table thead {
+	background-color: #346733;
+	color: white;
+}
+
+#pmpro_levels_table th {
+	text-align: left;
+}
+
+#pmpro_levels_table td {
+	border-bottom: 1px solid #dbdbdb;
+	font-weight: 500;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#pmpro_levels_table td strong {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.pmpro_btn, .pmpro_btn:link, .pmpro_content_message a, .pmpro_content_message a:link {
+	border: 1px solid #346733;
+	background: white;
+	color: #346733;
+	border-radius: 20px;
+}
+
+.pmpro_btn:hover {
+	background-color: #346733;
+	color: white;
+}
+
+
+/*---Kurser----*/
+.kursus li  {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 2rem !important;
+}
+.kursus li:hover img {
+	transform: scale(1.05);
+	
+}
+.kursus li h4,
+.kursus li h2{
+	position: absolute;
+	text-transform: uppercase;
+	bottom: 0;
+	left: 0px;
+	background-color: #346733;
+	padding: 10px 20px;
+	z-index: 4;
+	font-size: 18px;
+	
+}
+.kursus li h4 a,
+.kursus li h2 a{
+	color: white !important;
+}
+.kursus li img {
+	object-fit: cover;
+	max-height:150px;
+	transition: 200ms ease-in-out;
+}
+
+.kursus a {
+	display: block;
+}
+
+/* kursus slut ---*/
+/* kursus single */
+.pmpro_courses.pmpro_courses-lessons.pmpro-courses-has-access {
+	font-family: 'roboto';
+	border: none;
+	margin-top: 0;
+}
+
+
+/* lektioner single */
+.pmpro_courses_lesson-status, .pmpro_courses_lesson-back-to-course {
+	padding: 0 40px;
+}
+
+.pmpro_courses_lesson-status p {
+	
+display: flex;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+input[type="checkbox"]:hover {
+	cursor: pointer;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+	margin-right: 10px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1.2);
+}
+
+input[type="checkbox"]::before {
+  /* ...existing styles */
+
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]::before {
+  /* ...existing styles */
+
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+	background-color: white;
+}
+
+input[type="checkbox"]:hover:checked{
+	background: none;
+}
+input[type="checkbox"]:checked,
+input[type="checkbox"]:checked:hover {
+	background-color: green;
+	border: green;
+}
+
+
+
+/*------- KONTAKT ---------*/
+
+/* ofte stillede spørgsmål */
+#primary #wpsm_accordion_2346 .wpsm_panel-default {
+	border: 1px solid #346733 !important;
+	border-radius: 30px !important;
+	background: none !important;
+	margin-bottom: 20px;
+}
+#wpsm_accordion_2346 .wpsm_panel-default > .wpsm_panel-heading {
+	padding: 5px;
+}
+
+#wpsm_accordion_2346 h4.wpsm_panel-title a {
+	font-family: 'Roboto' !important;
+}
+#wpsm_accordion_2346 .wpsm_panel-default .wpsm_panel-body {
+	font-family: roboto !important;
+	line-height:1.5;
+	color: inherit !important;
+	border: none;
+	font-size: 15px !important;
+	padding: 25px;
+}
+#wpsm_accordion_2346 li {
+	list-style-type:disc;
+	margin-left: 10px;
+}
+
+/*-- kontakt slut ---*/
+
+@media only screen and (max-width: 1125px) { 
+	header .custom-logo-link img {
+		max-width: 200px;
+		
+	}
+	.ast-header-button-1 .ast-custom-button {
+		width: 90px;
+	}
+	.ast-builder-grid-row>.site-header-section {
+		flex-wrap: wrap;
+	}
+	
+	.ast-builder-grid-row.ast-grid-center-col-layout {
+		grid-template-columns: auto auto;
+	}
+	.site-header-primary-section-right.site-header-section.ast-flex.ast-grid-right-section {
+		position: absolute;
+		width: 100%;
+		background-color: white;
+		top: 55px;
+		right:0;
+		padding-right: 75px;
+	}
+}
+
+/*----- NYHEDER oversigt ------*/
+
+/*nyhed billede*/
+.nyheder img {
+	height: 200px;
+	object-fit: cover;
+	width: 100%;
+	display: block;
+	margin: 0;
+}
+/*farve på link */
+.nyheder a {
+	color: #727272;
+}
+/* placering af dato */
+.nyheder .dato {
+	vertical-align: center;
+	font-size: 13px;
+	margin-bottom: 0;
+	position:absolute;
+	bottom: 15px;
+	left: 15px;
+}
+/* kalender ikon */
+.nyheder .dato:before {
+	content: " ";
+	background-image: url("https://jsk-grafik.dk/kea/kaninvaernet.dk/wp-content/uploads/2022/05/calendar.svg");
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-size: 12px;
+	width: 12px;
+	height: 14px;
+	display: inline-block;
+	margin-right: 5px;
+	
+}
+/* nyheds container */
+.nyheder li {
+	position: relative;
+	background-color: white; 
+	transition: 100ms ease-in-out;
+}
+/* nyhed tekst sektion */
+.nyheder .contain {
+	padding: 15px;
+	padding-bottom: 30px;
+}
+/* nyhed kategori placering mm. */
+.nyheder li.wp-block-post .cat {
+font-size: 14px !important;	
+	position: absolute;
+	top: 20px;
+	left: -8px;
+	z-index: 4;
+	background-color: #346733;
+	color: white;
+	padding: 10px 25px;
+	font-family: 'Fira Sans';
+}
+.nyheder li:hover {
+	transform:scale(1.01);
+}
+/*---- NYHEDER SLUT----*/
+
+/* single nyhed ----*/
+div.artikel-contain {
+	max-width: 900px !important;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	padding: 40px 15px;
+	position: relative;
+}
+div.artikel-contain h1 {
+	position: inherit;
+	margin-left: 0;
+	margin-bottom: 40px;
+}
+.artikel-tekst {
+	font-size: 16px;
+	padding: 40px 0;
+}
+/*dato og kategori*/
+.nyhed-info {
+	color:#346733;
+	font-size: 14px;
+	border-left: 3px solid #346733;
+	padding-left: 10px;
+}
+
+.single.ast-page-builder-template .post-navigation {
+	max-width: 1000px;
+}
+.single .post-navigation {
+	border: none;
+}
+.single-nyhed main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.single-nyhed img.nyhed-img {
+	width: 100%;
+	max-height:500px;
+	object-fit: cover;
+}
+
+.single-nyhed .tags_cat span a {
+	text-decoration: underline;
+	margin-left: 5px;
+}
+.single-nyhed .tags_cat span {
+	display: block;
+	margin-bottom: 15px;
+}
+.single-nyhed .tags_cat {
+	border-left: 1px solid grey;
+	padding-left: 20px;
+}
+
+.single .yarpp h3 {
+	text-transform: inherit;
+}
+
+.single .yarpp ol {
+	margin: 0;
+	font-size: 16px;
+}
+.single .yarpp li{
+	margin-bottom: 10px;
+}
+
+.single .yarpp li a {
+	text-decoration: underline;
+}
+.single .yarpp {
+	max-width: 50%;
+	padding-left: 20px;
+	margin-top: 0;
+}
+
+
+/*--- BESTYRELSE -----*/
+.wpsm-team-owl-carousel .owl-item img {
+	height: 250px !important;
+	width:100%;
+	object-fit: cover;
+}
+/* fjern sociale ikoner */
+.wpsm_team_2_social_div {
+	display: none !important;
+}
+/* beskrivelse */
+#wpsm_team_2_b_row_2570 p.wpsm_team_2_b_desc {
+	text-align: left;
+	color: #8B8B8B !important;
+}
+
+/*info materiale */
+	
+	.wp-block-file a:first-child {
+		display: none;
+	}
+.wp-block-file {
+	--wp--style--block-gap: 10px;
+	padding-left: 0;
+}
+	.wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:visited{
+		background: none;
+		color: grey;
+		border-bottom: 1px solid;
+		border-radius: 0;
+		text-align: left;
+		padding: 0;
+		padding-bottom: 10px;
+		position: relative;
+		margin-left: 0;
+		width: 100%;
+		font-family: 'Roboto'
+	}
+.wp-block-file a.wp-block-file__button:hover {
+	background: none;
+	color: grey;
+}
+
+/* kun DESKTOP */
+@media screen and (min-width: 921px){ 
+	/* nav hover */
+	.main-navigation a:hover{
+	border-bottom: 4px solid green !important;
+}
+.main-navigation .sub-menu a:hover{
+	border-bottom: 0 !important;
+	background-color: #f8f8f8;
+}
+
+/* KAMPAGNE------*/
+.ryk-ind {
+	position: relative;
+	left: 20%;
+}
+	
+	.ryk-ind-right {
+		position: relative;
+	right: 20%;
+	}	
+	/* andet */
+	.formular {
+	border-radius: 90px;
+	position: relative;
+	bottom: 150px;
+	z-index: 1;
+	align-self: flex-start;
+}
+	
+	.bund-stot .wp-block-column a {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+	
+	
+	
+} /* kun desktop slut */
+
+/* display med burgermenu */
+@media screen and (max-width: 921px){
+.site-header-primary-section-right.site-header-section.ast-flex.ast-grid-right-section {
+		position: inherit;
+	width: inherit;
+	padding-right: inherit;
+	}
+	
+	/* lav CTA knapper */
+	#menu-item-2861, #menu-item-2862 {
+		width: 50%;
+		text-align: center;
+		border: 1px solid #346733;
+		font-weight: 600;
+		margin-top: 20px;
+	}
+	/* knap "støt mobilepay" grøn skrift */
+	#menu-item-2861 a {
+		color:#346733;	
+	}
+	
+	/* knap "bliv medlem" grøn bg og hvid tekst */
+	#menu-item-2862, #menu-item-2862 a{
+		background-color: #346733;
+		color: white !important;
+		border: 0;
+	}
+	/* log ind/min konto */
+	#menu-item-2863 a {
+		text-align: center;
+		margin: 10px 0;
+		border: 0;
+	}
+	/* ikon til log ind/min konto */
+	#menu-item-2863 a:after {
+	content:' ';
+	margin-left: 5px;
+	background-image: url("https://jsk-grafik.dk/kea/kaninvaernet.dk/wp-content/uploads/2022/05/user-solid.svg");
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-size: 15px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
+	/* alle menupunkter sorte */
+	.main-navigation a {
+		color: black;
+	}
+}
+/*------- KUN MOBIL ------*/
+@media screen and (max-width: 720px) {
+	/* fjern streg under H1 */
+	h1:before {
+		display: none;
+	}
+	
+	/*forside knapper */
+	.home .wp-block-cover .wp-block-buttons {
+		bottom: 0;
+		position: absolute;
+		gap: 0;
+		width: 100%;
+		left: 0;
+	}
+	.home .wp-block-cover .wp-block-button {
+	width: 50%;	
+	}
+	.home .wp-block-cover .wp-block-button a {
+		border-radius: 0;
+		width: 100%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
